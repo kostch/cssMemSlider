@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +7,7 @@
 
 body {
     background: lightgray;
+    font-family: 'Lobster', cursive;
 }
 
 .slider {
