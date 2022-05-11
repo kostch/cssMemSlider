@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: lightgray;
+}
+
+.slider {
+    max-width: 1023px;
+    height: 100%;
+    overflow: hidden;
+    border: 10px solid white;
+    border-radius: 3vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-wrapper {
+    max-width: 1023px;
+    padding-top: 15px;
+    height: 90vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin: 5px;
+    background: cadetblue;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+
+.circle:hover {
+    background: darkcyan;
+    transform: scale(1.1);
+}
+
+input[name='meme'] {
+    display: none;
+}
+
+.slides {
+    width: 400%;
+    height: 85%;
+    display: flex;
+    margin-bottom: 3vh;
+}
+
+.slide {
+    width: 25%;
+    transition: all .6s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#meme1:checked ~ .scroll {
+    margin-left: 0;
+}
+
+#meme2:checked ~ .scroll {
+    margin-left: -25%;
+}
+
+#meme3:checked ~ .scroll {
+    margin-left: -50%;
+}
+
+#meme4:checked ~ .scroll {
+    margin-left: -75%;
+}
+
+.doted {
+    display: flex;
+    padding: 0 3vh;
+    justify-content: space-between;
+}
+
+.title-wrapper {
+    display: flex;
+    width: 60%;
+    overflow: hidden;
+    transition: all .6s ease;
+}
+
+.title {
+    width: 100%;
+    min-width: 100%;
+    padding: 0 3vh;
+}
+
+@media (max-width: 768px)  {
+    .navigation {
+        align-items: center;
+        flex-direction: column;
+    }
+    .title-wrapper {
+        order: 2;
+    }
+    .doted {
+        margin-bottom: 3vh;
+    }
+    .slides {
+        height: 75%;
+    }
+}
