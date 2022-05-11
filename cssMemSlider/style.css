@@ -40,6 +40,7 @@ body {
 
 .circle {
     padding: 5px;
+    margin: 0.8vh;
     cursor: pointer;
 }
 
@@ -58,7 +59,6 @@ body {
     height: 1rem;
     border-radius: 50%;
     box-sizing: border-box;
-    margin: 5px;
     border: 1px solid dodgerblue;
     transition: all .4s ease;
 }
