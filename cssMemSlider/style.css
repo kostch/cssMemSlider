@@ -50,7 +50,15 @@ body {
     -moz-box-shadow: 0 0 0.5em 0.4em rgba(0, 0, 0, 0.3);
     box-shadow: 0 0 0.5em 0.4em rgba(0, 0, 0, 0.3);
     transform: scale(1.4);
-    border: 1px solid black;
+    border: 0.07rem solid black;
+}
+
+.circle:active .circle-dot {
+    transition: all 0.1s;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    transform: scale(0.6);
 }
 
 .circle-dot {
@@ -59,7 +67,7 @@ body {
     height: 1rem;
     border-radius: 50%;
     box-sizing: border-box;
-    border: 1px solid dodgerblue;
+    border: 0.07rem solid dodgerblue;
     transition: all .4s ease;
 }
 
@@ -146,7 +154,7 @@ input[name='meme'] {
     display: flex;
     align-items: center;
     font-size: 1.4rem;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.05rem;
     transition: all .6s ease;
 }
 
